@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial with REST and Main app</title>
+</head>
+<body>
+<p>Hi there {{ name }}</p>
+<p>
+{%  if studies %}
+    <ol>
+    {%  for study in studies %}
+    <li>{{ study.code }}: {{ study.name }} [ {{ study.created }}]</li>
+    {%  endfor %}
+    </ol>
+{%  endif %}
+</p>
+</body>
+</html>
